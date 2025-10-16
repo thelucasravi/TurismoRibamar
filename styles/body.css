@@ -100,14 +100,17 @@ main {
   text-align: center;
 
   & p {
+    margin: auto;
+    width: 762px;
     text-align: center;
+    display: flex;
   }
 
 }
 
 .conteudo{
   max-width: 762px;
-  margin: 100px auto;
+  margin: 25px auto;
   display: flex;
   justify-content: initial;
   align-items: center;
@@ -131,18 +134,35 @@ main {
   #prefeito {
     letter-spacing: 1px;
     color: #E1624F;
-    margin-top: 75px;
+    margin-top: 45px;
   }
 
 }
 
 #linha1 {
-    margin-top: 5px;
+    margin-top: 5px auto;
     width: 762px;
     border-bottom: 1px solid #c4c4c4;
 }
 
+
+#linha2 {
+    margin: 5px auto;
+    width: 762px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+
 @media (max-width: 375px) {
+
+    main {
+
+      p {
+        max-width: 275px;
+      }
+
+    }
+
     #atracao {
       margin-left: 110px;
     }
@@ -152,7 +172,27 @@ main {
     }
 
     p {
-      width: 375px
+      margin-left: 20px;
+      width: 335px
       
+    }
+
+    #imgestatua {
+      margin-left: 60px;
+      width: 275px;
+      height: 200px;
+    }
+
+    #linha1 {
+      margin: 5px auto;
+      width: 375px;
+    }
+
+    #prefeito {
+      margin-left: 150px;
+    }
+
+    #julinho {
+      margin-left: 30px;
     }
 }
