@@ -1,0 +1,158 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #333333;
+  background-color: #e9e9e9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1d4ed8;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #213547;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+@media (max-width: 375px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  & p {
+    text-align: center;
+  }
+
+}
+
+.conteudo{
+  max-width: 762px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+
+  #atracao {
+    letter-spacing: 1px;
+    color: #E1624F;
+  }
+
+  img {
+    max-width: 762px;
+    border-radius: 16px;
+  }
+
+  p {
+    max-width: 762px;
+    text-align: justify;
+    font-size: 13px;
+  }
+
+  #prefeito {
+    letter-spacing: 1px;
+    color: #E1624F;
+    margin-top: 75px;
+  }
+
+}
+
+#linha1 {
+    margin-top: 5px;
+    width: 762px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+@media (max-width: 375px) {
+    #atracao {
+      margin-left: 110px;
+    }
+
+    #estatua {
+      margin-left: 70px;
+    }
+
+    p {
+      width: 375px
+      
+    }
+}
