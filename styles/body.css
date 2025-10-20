@@ -109,8 +109,8 @@ main {
 
 .conteudo {
   width: 762px;
-  margin: 25px auto;
   display: flex;
+  margin: 25px auto;
   justify-content: initial;
   align-items: center;
 
@@ -318,10 +318,6 @@ main {
   border-bottom: 1px solid #c4c4c4;
 }
 
-footer {
-  
-}
-
 
 @media (max-width: 80rem) {
 
@@ -465,10 +461,5 @@ footer {
     #published {
       margin-left: 23px;
     }
-  }
-
-  .conteudo {
-    display: flex;
-    justify-content: center;
   }
 }
