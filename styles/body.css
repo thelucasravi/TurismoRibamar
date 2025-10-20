@@ -18,6 +18,7 @@ a {
   color: #2563eb;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #1d4ed8;
 }
@@ -25,12 +26,9 @@ a:hover {
 .selecionado {
   color: #fafafa;
   scale: 1.2;
-  background-color:  #1d4ed8;
+  background-color: #1d4ed8;
   padding: 5px 10px 10px;
   border-radius: 10px;
-  pointer-events: none;
-  
-  
 }
 
 body {
@@ -94,16 +92,6 @@ nav a:hover {
   color: #2563eb;
 }
 
-@media (max-width: 375px) {
-  .header-container {
-    justify-content: center;
-  }
-
-  nav {
-    display: none;
-  }
-}
-
 main {
   max-width: 1280px;
   margin: 0 auto;
@@ -119,7 +107,7 @@ main {
 
 }
 
-.conteudo{
+.conteudo {
   max-width: 762px;
   margin: 25px auto;
   display: flex;
@@ -157,125 +145,323 @@ main {
     justify-content: center;
   }
 
-  #oft {
-    background-color: #1d4ed8;
-    max-width: 762px;
-    height: 150px;
+}
+
+.mobile {
+  display: none;
+}
+
+.nutrimax {
+  background-color: #1d4ed8;
+  max-width: 762px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: initial;
+  padding: 20px;
+  border-radius: 20px;
+
+  .mobile {
+    display: none;
+  }
+
+  #ntrtit {
     display: flex;
-    gap: 10px;
-    flex-direction: row;
-    justify-content: initial;
-    padding: 20px;
-    border-radius: 20px;
+    flex-direction: column;
 
-    #ofttit {
-      display: flex;
-      flex-direction: column;
-
-      #published {
-        color: #8d8d8d;
-      }
+    #published {
+      color: #8d8d8d;
     }
+  }
 
+  h3 {
+    color: white;
+    display: flex;
+    margin-top: 0;
+    margin-left: 170px;
+    align-items: top;
+    font-size: 15px;
 
-    h3 {
-      color: white;
-      display: flex;
-      margin-top: 0;
-      margin-left: 170px;
-      align-items: top;
-      font-size: 15px;
+  }
 
+  p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 170px;
+    color: rgb(223, 223, 223);
+  }
+
+  img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  }
+}
+
+.brk {
+  background-color: #1d4ed8;
+  max-width: 762px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: initial;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  .mobile {
+    display: none;
+  }
+
+  #brktit {
+    display: flex;
+    flex-direction: column;
+
+    #published {
+      color: #8d8d8d;
     }
+  }
 
-    p {
-      font-size: 12px;
-      margin-top: 0;
-      margin-left: 170px;
-      color: rgb(223, 223, 223);
+  h3 {
+    color: white;
+    display: flex;
+    margin-top: 0;
+    margin-left: 170px;
+    align-items: top;
+    font-size: 15px;
+
+  }
+
+  p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 170px;
+    color: rgb(223, 223, 223);
+  }
+
+  img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  }
+
+}
+
+.oft {
+  background-color: #1d4ed8;
+  max-width: 762px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: initial;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  .mobile {
+    display: none;
+  }
+
+
+
+  #ofttit {
+    display: flex;
+    flex-direction: column;
+
+    #published {
+      color: #8d8d8d;
     }
+  }
 
-    img {
-      object-fit: cover;
-      width: 150px;
-      height: 150px;
-      position: absolute;
-    }
 
+  h3 {
+    color: white;
+    display: flex;
+    margin-top: 0;
+    margin-left: 170px;
+    align-items: top;
+    font-size: 15px;
+
+  }
+
+  p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 170px;
+    color: rgb(223, 223, 223);
+  }
+
+  img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
   }
 
 }
 
 #linha1 {
-    margin-top: 5px auto;
-    width: 762px;
-    border-bottom: 1px solid #c4c4c4;
+  margin-top: 5px;
+  width: 762px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 
 #linha2 {
-    margin: 5px auto;
-    width: 762px;
-    border-bottom: 1px solid #c4c4c4;
+  margin: 5px auto;
+  width: 762px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 80rem) {
 
-    main {
+  .header-container {
+    justify-content: center;
+  }
 
-      p {
-        max-width: 275px;
-      }
+  nav {
+    display: none;
+  }
 
-    }
-
-    #atracao {
-      margin-left: 105px;
-    }
-
-    #estatua {
-      margin-left: 70px;
-    }
+  main {
 
     p {
-      margin-left: 12px;
-      width: 335px
-      
+      max-width: 275px;
     }
 
-    .imgcell {
-      margin-left: 45px;
-      width: 275px;
-      height: 200px;
+  }
+
+  #atracao {
+    margin-left: 105px;
+  }
+
+  #estatua {
+    margin-left: 70px;
+  }
+
+  p {
+    margin-left: 12px;
+    width: 335px
+  }
+
+  .imgcell {
+    margin-left: 45px;
+    width: 275px;
+    height: 200px;
+  }
+
+  #linha1 {
+
+    width: 375px;
+  }
+
+  #prefeito {
+    margin-left: 150px;
+  }
+
+  #julinho {
+    margin-left: 30px;
+  }
+
+  #ultimas {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .oft {
+    margin: auto;
+    max-width: 200px;
+    height: 420px;
+    justify-content: center;
+
+    img {
+      width: 200px;
     }
 
-    #linha1 {
-
-      width: 375px;
-    }
-
-    #prefeito {
-      margin-left: 150px;
-    }
-
-    #julinho {
+    h3 {
+      width: 200px;
+      height: 300px;
+      display: flex;
+      position: relative;
+      margin-top: 160px;
       margin-left: 30px;
     }
 
-    #ultimas {
-      display: none;
-      margin-right: 175px;
+    p {
+      width: 200px;
+      margin-left: 15px;
     }
 
-}
-
-
-@media (max-width: 375px) {
-    
-    #oft {
-      background-color: black;
+    #published {
+      margin-left: 23px;
     }
+  }
+
+
+  .brk {
+    margin: 20px auto;
+    max-width: 200px;
+    height: 420px;
+    justify-content: center;
+
+    img {
+      width: 200px;
+    }
+
+    h3 {
+      width: 200px;
+      height: 300px;
+      display: flex;
+      position: relative;
+      margin-top: 160px;
+      margin-left: 30px;
+    }
+
+    p {
+      width: 200px;
+      margin-left: 15px;
+    }
+
+    #published {
+      margin-left: 23px;
+    }
+  }
+
+  .nutrimax {
+    margin: 20px auto;
+    max-width: 200px;
+    height: 420px;
+    justify-content: center;
+
+    img {
+      width: 200px;
+    }
+
+    h3 {
+      width: 200px;
+      height: 300px;
+      display: flex;
+      position: relative;
+      margin-top: 160px;
+      margin-left: 30px;
+    }
+
+    p {
+      width: 200px;
+      margin-left: 15px;
+    }
+
+    #published {
+      margin-left: 23px;
+    }
+  }
 
 
 }
