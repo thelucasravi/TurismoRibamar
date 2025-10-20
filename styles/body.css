@@ -22,6 +22,17 @@ a:hover {
   color: #1d4ed8;
 }
 
+.selecionado {
+  color: #fafafa;
+  scale: 1.2;
+  background-color:  #1d4ed8;
+  padding: 5px 10px 10px;
+  border-radius: 10px;
+  pointer-events: none;
+  
+  
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -137,6 +148,62 @@ main {
     margin-top: 45px;
   }
 
+  #ultimas {
+    color: #2563eb;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #oft {
+    background-color: #1d4ed8;
+    max-width: 762px;
+    height: 150px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: initial;
+    padding: 20px;
+    border-radius: 20px;
+
+    #ofttit {
+      display: flex;
+      flex-direction: column;
+
+      #published {
+        color: #8d8d8d;
+      }
+    }
+
+
+    h3 {
+      color: white;
+      display: flex;
+      margin-top: 0;
+      margin-left: 170px;
+      align-items: top;
+      font-size: 15px;
+
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 0;
+      margin-left: 170px;
+      color: rgb(223, 223, 223);
+    }
+
+    img {
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+    }
+
+  }
+
 }
 
 #linha1 {
@@ -164,7 +231,7 @@ main {
     }
 
     #atracao {
-      margin-left: 110px;
+      margin-left: 105px;
     }
 
     #estatua {
@@ -172,19 +239,19 @@ main {
     }
 
     p {
-      margin-left: 20px;
+      margin-left: 12px;
       width: 335px
       
     }
 
-    #imgestatua {
-      margin-left: 60px;
+    .imgcell {
+      margin-left: 45px;
       width: 275px;
       height: 200px;
     }
 
     #linha1 {
-      margin: 5px auto;
+
       width: 375px;
     }
 
@@ -195,4 +262,20 @@ main {
     #julinho {
       margin-left: 30px;
     }
+
+    #ultimas {
+      display: none;
+      margin-right: 175px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    
+    #oft {
+      background-color: black;
+    }
+
+
 }
