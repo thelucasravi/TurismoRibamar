@@ -108,7 +108,7 @@ main {
 }
 
 .conteudo {
-  max-width: 762px;
+  width: 762px;
   margin: 25px auto;
   display: flex;
   justify-content: initial;
@@ -318,6 +318,10 @@ main {
   border-bottom: 1px solid #c4c4c4;
 }
 
+footer {
+  
+}
+
 
 @media (max-width: 80rem) {
 
@@ -463,5 +467,8 @@ main {
     }
   }
 
-
+  .conteudo {
+    display: flex;
+    justify-content: center;
+  }
 }
